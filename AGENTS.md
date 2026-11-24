@@ -18,7 +18,11 @@ These cover process and preferences that can't be inferred from the code.
   - e.g. `feat(auth): add password reset flow`
 - Summary: imperative mood, lowercase, no period, max ~72 characters.
 - Body (when needed): explain *why*, not *what*.
-- Small, focused commits; each one should leave the project working.
+- Atomic commits: one logical change per commit (a feature step, a fix, or a refactor), never mixed.
+  - Split by purpose, not by file. Unrelated fixes found along the way get their own commit.
+  - Don't commit half-finished or knowingly broken code, but don't run checks per commit (see Checks).
+  - Aim for under ~200 changed lines per commit so it can be reviewed in one sitting.
+  - Keep formatting, renames, and generated files in separate commits from logic changes.
 - Reference issues in the footer: `Closes #123`.
 - Never commit secrets, `.env` files, or debug leftovers.
 - Only commit when asked. Never amend or rewrite pushed commits.
