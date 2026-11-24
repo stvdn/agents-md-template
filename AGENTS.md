@@ -13,7 +13,8 @@ These cover process and preferences that can't be inferred from the code.
 
 ## Commits
 
-- Use [Conventional Commits](https://www.conventionalcommits.org/): `<type>(<optional scope>): <summary>`
+- Use [Conventional Commits](https://www.conventionalcommits.org/): `<type>(<scope>): <summary>`
+  - Scope is required: the area of the code affected (e.g. `auth`, `api`, `ui`).
   - e.g. `feat(auth): add password reset flow`
 - Summary: imperative mood, lowercase, no period, max ~72 characters.
 - Body (when needed): explain *why*, not *what*.
